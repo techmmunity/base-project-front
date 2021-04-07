@@ -1,0 +1,15 @@
+{
+	"cSpell.words": [
+		"Helvetica",
+		"Roboto",
+		"builtins",
+		"camelcase",
+		"paren",
+		"techmmunity"
+	],
+	"material-icon-theme.folders.associations": {
+		"types": "typescript",
+		"enums": "typescript",
+		"interfaces": "typescript"
+	}
+}
