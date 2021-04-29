@@ -1,3 +1,4 @@
+import { appWithTranslation } from "next-i18next";
 import { AppProps } from "next/app";
 
 import { Head } from "components/Head";
@@ -16,4 +17,4 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => (
 	</>
 );
 
-export default MyApp;
+export default appWithTranslation(MyApp);
