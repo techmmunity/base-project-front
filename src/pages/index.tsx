@@ -1,5 +1,7 @@
+import { FCWithLayout } from "types/interfaces/FCWithLayout ";
+
 import { Container } from "styles/pages/Home";
 
-const Home = () => <Container>Hello World</Container>;
+const Home: FCWithLayout = () => <Container>Hello World</Container>;
 
 export default Home;
