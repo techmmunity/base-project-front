@@ -23,4 +23,39 @@ export default createGlobalStyle`
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
   }
+
+	a {
+		color: ${Colors.white};
+		text-decoration: none;
+	}
+
+	button {
+		border: transparent;
+
+		&:not(:disabled) {
+			cursor: pointer;
+		}
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	@media (max-width: 768px) {
+    html {
+      font-size: 57.5%;
+    }
+  }
+
+	@media (max-width: 320px) {
+    html {
+      font-size: 55.5%;
+    }
+  }
+
+	@media (max-width: 280px) {
+    html {
+      font-size: 52.5%;
+    }
+  }
 `;
