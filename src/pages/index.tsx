@@ -2,9 +2,11 @@ import { GetStaticProps } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
+import { FCWithLayout } from "types/interfaces/FCWithLayout ";
+
 import { Container } from "styles/pages/Home";
 
-const Home = () => {
+const Home: FCWithLayout = () => {
 	const { t } = useTranslation();
 
 	return <Container>{t("message")}</Container>;

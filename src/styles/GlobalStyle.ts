@@ -25,7 +25,7 @@ export default createGlobalStyle`
   }
 
 	a {
-		color: ${Colors.white};
+		color: ${Colors.white1000};
 		text-decoration: none;
 	}
 
