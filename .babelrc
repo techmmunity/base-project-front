@@ -1,5 +1,4 @@
 {
 	"presets": ["next/babel"],
-	"plugins": [["styled-components", { "ssr": true }]],
-	"ignore": ["**/*.test.ts", "**/*.test.tsx"]
+	"plugins": [["styled-components", { "ssr": true }]]
 }
