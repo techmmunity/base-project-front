@@ -1,7 +1,8 @@
 {
 	"name": "base-project-front",
 	"version": "1.0.0",
-	"license": "MIT",
+	"private": "false",
+	"license": "APACHE 2.0",
 	"dependencies": {
 		"next": "^10.2.0",
 		"next-google-fonts": "^2.2.0",
