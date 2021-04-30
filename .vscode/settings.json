@@ -5,6 +5,7 @@
 		"builtins",
 		"camelcase",
 		"paren",
+		"postbuild",
 		"techmmunity"
 	],
 	"material-icon-theme.folders.associations": {
