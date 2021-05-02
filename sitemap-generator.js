@@ -1,5 +1,6 @@
 module.exports = {
 	siteUrl: "https://example.com",
+	exclude: ["/404"],
 	generateRobotsTxt: true,
 	robotsTxtOptions: {
 		policies: [
