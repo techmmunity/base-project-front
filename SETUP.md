@@ -12,6 +12,7 @@
 - [ ] Change the project name on `package.json`
 - [ ] Add project to [CodeFactor](https://www.codefactor.io/)
 - [ ] Add project to [DeepScan](https://deepscan.io/dashboard/#view=team&tid=13883)
+- [ ] Add project to [Coveralls](https://coveralls.io/welcome)
 - [ ] Update the badges on README.md
 
 ## After performing initial config of project
