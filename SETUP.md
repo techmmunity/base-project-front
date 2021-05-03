@@ -10,15 +10,19 @@
 ## Initial config
 
 - [ ] Change the project name on `package.json`
+- [ ] Change "siteUrl" and "additionalSitemaps" from `sitemap-generator.js`
+- [ ] Change "title" from `src/components/Head/index.tsx`
 - [ ] Add project to [CodeFactor](https://www.codefactor.io/)
 - [ ] Add project to [DeepScan](https://deepscan.io/dashboard/#view=team&tid=13883)
 - [ ] Add project to [Coveralls](https://coveralls.io/welcome)
 - [ ] Update the badges on README.md
 
-## After performing initial config of project
+## After the first test file be added to the project
 
-- [ ] Change "siteUrl" and "additionalSitemaps" from `sitemap-generator.js`
-- [ ] Change "title" from `src/components/Head/index.tsx`
+- [ ] Remove "Test TypeScript Syntax" step from `.github/workflows/tests.yml`
+- [ ] Remove script "temp:test-tsc" from `package.json`
+- [ ] Uncomment steps "Run Tests" and "Colect Coverage" from `.github/workflows/tests.yml`
+- [ ] Uncomment "coverageThreshold" from `jest.config.ts`
 
 ## After all other steps are completed
 
