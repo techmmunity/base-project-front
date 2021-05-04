@@ -1,14 +1,6 @@
 export default {
 	collectCoverageFrom: ["components/**/*.tsx", "pages/**/*.tsx"],
 	coverageDirectory: "../coverage",
-	// coverageThreshold: {
-	// 	global: {
-	// 		branches: 100,
-	// 		functions: 100,
-	// 		lines: 100,
-	// 		statements: 100,
-	// 	},
-	// },
 	clearMocks: true,
 	globals: {
 		"ts-jest": {
@@ -23,4 +15,12 @@ export default {
 	},
 	testPathIgnorePatterns: ["<rootDir>/.next", "<rootDir>/node_modules"],
 	testRegex: ".*\\.spec\\.(ts|tsx)$",
+	// coverageThreshold: {
+	// 	global: {
+	// 		branches: 100,
+	// 		functions: 100,
+	// 		lines: 100,
+	// 		statements: 100,
+	// 	},
+	// },
 };
