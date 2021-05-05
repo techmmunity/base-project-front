@@ -67,6 +67,7 @@
 					"module",
 					"/components/",
 					"/assets/",
+					"/helpers/",
 					"/layouts/",
 					"/types/",
 					"/styles/",

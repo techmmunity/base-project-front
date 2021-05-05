@@ -4,22 +4,7 @@ import "@testing-library/jest-dom/extend-expect";
 
 import { HeadContent } from "components/HeadContent";
 
-interface GetAttributeValue {
-	element: string;
-	attribute: string;
-	attributeValue: string;
-	namedItem: string;
-}
-
-const getAttributeValue = ({
-	element,
-	attribute,
-	attributeValue,
-	namedItem,
-}: GetAttributeValue) =>
-	document
-		.querySelector(`${element}[${attribute}="${attributeValue}"]`)
-		?.attributes.getNamedItem(namedItem)?.value;
+import { getAttributeValue } from "../helpers/getAttributeValue";
 
 describe("Components > HeadContent", () => {
 	it("should find the meta og:name_title with Base Project Front value", () => {
