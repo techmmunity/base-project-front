@@ -8,6 +8,8 @@ import Document, {
 
 import { ServerStyleSheet } from "styled-components";
 
+import { HeadContent } from "components/HeadContent";
+
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext) {
 		const sheet = new ServerStyleSheet();
@@ -42,6 +44,7 @@ export default class MyDocument extends Document {
 						href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
 						rel="stylesheet"
 					/>
+					<HeadContent />
 				</Head>
 				<body>
 					<Main />

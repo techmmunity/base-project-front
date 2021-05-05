@@ -9,7 +9,7 @@ import { Container } from "styles/pages/Home";
 const Home: FCWithLayout = () => {
 	const { t } = useTranslation();
 
-	return <Container data-testid="message">{t("message")}</Container>;
+	return <Container>{t("message")}</Container>;
 };
 
 export default Home;
