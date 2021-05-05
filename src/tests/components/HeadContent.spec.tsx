@@ -22,7 +22,7 @@ describe("Components > HeadContent", () => {
 		).toBe("Base Project Front");
 	});
 
-	it(`should find the meta og:url with ${Urls.SITE} value`, () => {
+	it(`should find the meta og:url with ${Urls.self} value`, () => {
 		render(<HeadContent />);
 
 		expect(
@@ -32,7 +32,7 @@ describe("Components > HeadContent", () => {
 				attributeValue: "og:url",
 				namedItem: "content",
 			}),
-		).toBe(Urls.SITE);
+		).toBe(Urls.self);
 	});
 
 	it("should find the meta og:locale with en value", () => {
@@ -48,7 +48,7 @@ describe("Components > HeadContent", () => {
 		).toBe("en");
 	});
 
-	it(`should find the link cannonical with ${Urls.SITE} value`, () => {
+	it(`should find the link cannonical with ${Urls.self} value`, () => {
 		render(<HeadContent />);
 
 		expect(
@@ -58,6 +58,6 @@ describe("Components > HeadContent", () => {
 				attributeValue: "cannonical",
 				namedItem: "href",
 			}),
-		).toBe(Urls.SITE);
+		).toBe(Urls.self);
 	});
 });

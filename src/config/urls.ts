@@ -1,3 +1,3 @@
 export const Urls = {
-	SITE: "https://example.com",
+	self: "https://example.com",
 };
