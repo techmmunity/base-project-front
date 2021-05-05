@@ -33,7 +33,7 @@ describe("Components > HeadContent", () => {
 		).toBe("https://example.com");
 	});
 
-	it("should find the meta og:locale with https://example.com value", () => {
+	it("should find the meta og:locale with en value", () => {
 		render(<HeadContent />);
 
 		expect(
@@ -43,7 +43,7 @@ describe("Components > HeadContent", () => {
 				attributeValue: "og:locale",
 				namedItem: "content",
 			}),
-		).toBe("en-us");
+		).toBe("en");
 	});
 
 	it("should find the link cannonical with https://example.com value", () => {

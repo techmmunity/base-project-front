@@ -10,6 +10,16 @@ import { ServerStyleSheet } from "styled-components";
 
 import { HeadContent } from "components/HeadContent";
 
+const getHtmlLang = (locale: string) => {
+	switch (locale) {
+		case "pt-BR":
+			return "pt";
+		case "en-US":
+		default:
+			return "en";
+	}
+};
+
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext) {
 		const sheet = new ServerStyleSheet();
@@ -22,6 +32,7 @@ export default class MyDocument extends Document {
 				});
 
 			const initialProps = await Document.getInitialProps(ctx);
+
 			return {
 				...initialProps,
 				styles: (
@@ -37,14 +48,20 @@ export default class MyDocument extends Document {
 	}
 
 	render() {
+		const { __NEXT_DATA__ } = this.props;
+
+		const { locale } = __NEXT_DATA__;
+
+		const htmlLang = getHtmlLang(locale as string);
+
 		return (
-			<Html lang="en-us">
+			<Html lang={htmlLang}>
 				<Head>
 					<link
 						href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
 						rel="stylesheet"
 					/>
-					<HeadContent />
+					<HeadContent htmlLang={htmlLang} />
 				</Head>
 				<body>
 					<Main />
