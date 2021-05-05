@@ -4,6 +4,8 @@ import "@testing-library/jest-dom/extend-expect";
 
 import { HeadContent } from "components/HeadContent";
 
+import { Urls } from "config/urls";
+
 import { getAttributeValue } from "../helpers/getAttributeValue";
 
 describe("Components > HeadContent", () => {
@@ -20,7 +22,7 @@ describe("Components > HeadContent", () => {
 		).toBe("Base Project Front");
 	});
 
-	it("should find the meta og:url with https://example.com value", () => {
+	it(`should find the meta og:url with ${Urls.self} value`, () => {
 		render(<HeadContent />);
 
 		expect(
@@ -30,7 +32,7 @@ describe("Components > HeadContent", () => {
 				attributeValue: "og:url",
 				namedItem: "content",
 			}),
-		).toBe("https://example.com");
+		).toBe(Urls.self);
 	});
 
 	it("should find the meta og:locale with en value", () => {
@@ -46,7 +48,7 @@ describe("Components > HeadContent", () => {
 		).toBe("en");
 	});
 
-	it("should find the link cannonical with https://example.com value", () => {
+	it(`should find the link cannonical with ${Urls.self} value`, () => {
 		render(<HeadContent />);
 
 		expect(
@@ -56,6 +58,6 @@ describe("Components > HeadContent", () => {
 				attributeValue: "cannonical",
 				namedItem: "href",
 			}),
-		).toBe("https://example.com");
+		).toBe(Urls.self);
 	});
 });
