@@ -2,13 +2,13 @@ interface Props {
 	htmlLang?: string;
 }
 
-import { SITE_LINK } from "config";
+import { Urls } from "config/urls";
 
 export const HeadContent: React.FC<Props> = ({ htmlLang = "en" }) => (
 	<>
 		<meta name="og:site_name" content="Base Project Front" />
-		<meta name="og:url" content={SITE_LINK} />
+		<meta name="og:url" content={Urls.SITE} />
 		<meta name="og:locale" content={htmlLang} />
-		<link rel="cannonical" href={SITE_LINK} />
+		<link rel="cannonical" href={Urls.SITE} />
 	</>
 );
