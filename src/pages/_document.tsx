@@ -48,10 +48,7 @@ export default class MyDocument extends Document {
 	}
 
 	render() {
-		const { __NEXT_DATA__ } = this.props;
-
-		const { locale } = __NEXT_DATA__;
-
+		const { locale } = this.props.__NEXT_DATA__;
 		const htmlLang = getHtmlLang(locale as string);
 
 		return (
