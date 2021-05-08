@@ -1,4 +1,4 @@
-import { LayoutsEnum } from "types/enums/LayoutsEnum";
+import { LayoutsEnum } from "types/enums/layout";
 
 import { DefaultLayout } from "./default";
 
