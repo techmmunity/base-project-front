@@ -8,7 +8,7 @@ import Document, {
 
 import { ServerStyleSheet } from "styled-components";
 
-import { HeadContent } from "components/HeadContent";
+import { HeadContent } from "web/components/HeadContent";
 
 const getHtmlLang = (locale: string) => {
 	switch (locale) {

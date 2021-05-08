@@ -66,6 +66,7 @@
 					"/styled-components/",
 					"module",
 					"/components/",
+					"/pages/",
 					"/assets/",
 					"/config/",
 					"/helpers/",

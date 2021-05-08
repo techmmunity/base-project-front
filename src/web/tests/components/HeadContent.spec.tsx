@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 
 import "@testing-library/jest-dom/extend-expect";
 
-import { HeadContent } from "components/HeadContent";
+import { HeadContent } from "web/components/HeadContent";
 
 import { Urls } from "config/urls";
 
