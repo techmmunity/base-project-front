@@ -1,11 +1,11 @@
 import { appWithTranslation } from "next-i18next";
 import { AppProps } from "next/app";
 
-import { Head } from "components/Head";
+import GlobalStyle from "GlobalStyle";
 
-import { LayoutWrapper } from "layouts/wrapper";
+import { Head } from "web/components/Head";
 
-import GlobalStyle from "styles/GlobalStyle";
+import { LayoutWrapper } from "web/layouts/wrapper";
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => (
 	<>

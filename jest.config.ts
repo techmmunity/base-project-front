@@ -1,6 +1,8 @@
 export default {
-	collectCoverageFrom: ["components/**/*.tsx", "pages/**/*.tsx"],
-	coverageDirectory: "../coverage",
+	collectCoverageFrom: [
+		"src/web/components/HeadContent/*.(ts|tsx)",
+		"src/web/pages/**/*.(ts|tsx)",
+	],
 	clearMocks: true,
 	globals: {
 		"ts-jest": {
@@ -9,7 +11,7 @@ export default {
 	},
 	moduleDirectories: ["node_modules", "src"],
 	moduleFileExtensions: ["js", "json", "ts", "tsx"],
-	setupFiles: ["<rootDir>/src/tests/setup.ts"],
+	setupFiles: ["<rootDir>/src/web/tests/setup.ts"],
 	transform: {
 		"^.+\\.(tsx|ts|jsx|js)$": "ts-jest",
 	},

@@ -10,10 +10,10 @@
 ## Initial config
 
 - [ ] Change the project name on `package.json`
-- [ ] Change `title` from `src/components/Head`
-- [ ] Change `content` of meta og:site_name from `src/components/HeadContent`
+- [ ] Change `title` from `src/web/components/Head`
+- [ ] Change `content` of meta og:site_name from `src/web/components/HeadContent`
 - [ ] Change `self` of Urls from `src/config/urls.ts`
-- [ ] Change `toBe` and `description` of test of meta og:site_name from `src/tests/components/HeadContent.spec.tsx`
+- [ ] Change `toBe` and `description` of test of meta og:site_name from `src/web/tests/components/HeadContent.spec.tsx`
 - [ ] Change `siteUrl` and `additionalSitemaps` from `sitemap-generator.js`
 - [ ] Add project to [CodeFactor](https://www.codefactor.io/)
 - [ ] Add project to [DeepScan](https://deepscan.io/dashboard/#view=team&tid=13883)
