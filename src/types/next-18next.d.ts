@@ -1,9 +1,9 @@
 import "next-i18next";
 
-import { Languages } from "./Languages";
+import { TranslatedTexts } from "./interfaces/i18n";
 
 declare module "next-i18next" {
 	export function useTranslation(): {
-		t: (key: Languages) => string;
+		t: (key: TranslatedTexts) => string;
 	};
 }

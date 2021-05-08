@@ -1,0 +1,1 @@
+export type TranslatedTexts = "message";
