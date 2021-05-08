@@ -3,7 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { HomePage } from "web/pages/Home";
 
-import { FCWithLayout } from "types/interfaces/FCWithLayout ";
+import { FCWithLayout } from "types/interfaces/layout";
 
 const Home: FCWithLayout = () => <HomePage />;
 
