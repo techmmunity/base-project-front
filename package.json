@@ -53,6 +53,7 @@
 		"test:watch": "jest --watch",
 		"test:cov": "jest --coverage",
 		"husky:pre-commit": "tsc && lint-staged",
-		"temp:test-tsc": "tsc"
+		"temp:test-tsc": "tsc",
+		"clone:core": "./scripts/clone-core.sh"
 	}
 }
