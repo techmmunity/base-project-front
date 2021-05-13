@@ -7,7 +7,7 @@ module.exports = {
 			{
 				userAgent: "*",
 				allow: "/",
-				disallow: ["/404", "404.html"],
+				disallow: ["/404.html"],
 			},
 		],
 		additionalSitemaps: ["https://example.com/sitemap.xml"],
