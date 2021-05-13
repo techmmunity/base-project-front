@@ -19,7 +19,7 @@ export default createGlobalStyle`
 
   body {
     background: ${Colors.background};
-    color: ${Colors.primary};
+    color: ${Colors.white1000};
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
   }
