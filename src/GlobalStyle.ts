@@ -41,6 +41,21 @@ export default createGlobalStyle`
 		list-style: none;
 	}
 
+  ::-webkit-scrollbar {
+		width: 0.5rem;
+		height: 0.5rem;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: ${Colors.gray300};
+		border-radius: 3px;
+	}
+
+	::-webkit-scrollbar-corner {
+		background: transparent;
+	}
+
+
 	@media (max-width: 768px) {
     html {
       font-size: 57.5%;
