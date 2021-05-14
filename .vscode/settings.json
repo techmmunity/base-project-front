@@ -35,10 +35,18 @@
 	"typescript.suggest.autoImports": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"typescript.tsserver.log": "verbose",
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
 
 	// JavaScript
 	"javascript.suggest.autoImports": true,
 	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	// JSON
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
 
 	// =========== Plugins & Extensions General Config ===============
 

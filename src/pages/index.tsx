@@ -1,7 +1,11 @@
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { Home } from "web/pages/Home";
+import { HomePage } from "web/pages/Home";
+
+import { FCWithLayout } from "types/interfaces/layout";
+
+const Home: FCWithLayout = () => <HomePage />;
 
 export default Home;
 
