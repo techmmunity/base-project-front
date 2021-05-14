@@ -55,7 +55,6 @@ export default createGlobalStyle`
 		background: transparent;
 	}
 
-
 	@media (max-width: 768px) {
     html {
       font-size: 57.5%;
