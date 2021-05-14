@@ -42,13 +42,18 @@ export default createGlobalStyle`
 	}
 
   ::-webkit-scrollbar {
-		width: 0.5rem;
-		height: 0.5rem;
+		width: 1rem;
+		height: 1rem;
+	}
+
+	::-webkit-scrollbar-track {
+		background: ${Colors.black1000}50;
+		border-radius: 4px;
 	}
 
 	::-webkit-scrollbar-thumb {
 		background: ${Colors.gray300};
-		border-radius: 3px;
+		border-radius: 4px;
 	}
 
 	::-webkit-scrollbar-corner {
