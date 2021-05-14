@@ -15,6 +15,7 @@ const getHtmlLang = (locale: string) => {
 		case "pt-BR":
 			return "pt";
 		case "en-US":
+			return "en";
 		default:
 			return "en";
 	}

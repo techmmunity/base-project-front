@@ -4,7 +4,7 @@ import { FCWithLayout } from "types/interfaces/layout";
 
 import { Container } from "./styles";
 
-export const Home: FCWithLayout = () => {
+export const HomePage: FCWithLayout = () => {
 	const { t } = useTranslation();
 
 	return <Container>{t("message")}</Container>;
