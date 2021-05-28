@@ -7,6 +7,11 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+		&:focus-visible {
+			outline: 3px solid transparent;
+		 	box-shadow: 0 0 0 3px ${Colors.white1000};
+		}
   }
 
 	html, body {
@@ -15,6 +20,7 @@ export default createGlobalStyle`
 
   html {
     font-size: 62.5%;
+		scroll-behavior: smooth;
   }
 
   body {
@@ -29,12 +35,9 @@ export default createGlobalStyle`
 		text-decoration: none;
 	}
 
-	button {
+	button, input {
+		font-size: 1.6rem;
 		border: transparent;
-
-		&:not(:disabled) {
-			cursor: pointer;
-		}
 	}
 
 	ul {
