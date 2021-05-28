@@ -6,7 +6,6 @@
 - [Install VSCode](https://code.visualstudio.com/Download)
 - Install **ALL** the extensions recommended in `.vscode/extensions.json`
 - **If the changes are not applied automatically** add the content of `.vscode/settings.json` in your personal settings.json
-- Execute `yarn clone:core`
 
 ## Initial config
 
