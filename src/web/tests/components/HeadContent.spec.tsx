@@ -6,7 +6,7 @@ import { HeadContent } from "web/components/HeadContent";
 
 import { Urls } from "config/urls";
 
-import { getAttributeValue } from "../helpers/getAttributeValue";
+import { getAttributeValue } from "../helpers/get-attribute-value";
 
 describe("Components > HeadContent", () => {
 	it("should find the meta og:name_title with Base Project Front value", () => {
