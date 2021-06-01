@@ -1,5 +1,5 @@
-import { PageContainer } from "web/components/PageContainer";
+import { Container } from "./styles";
 
 export const DefaultLayout: React.FC = ({ children }) => (
-	<PageContainer>{children}</PageContainer>
+	<Container>{children}</Container>
 );
