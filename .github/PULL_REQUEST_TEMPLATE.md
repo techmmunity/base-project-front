@@ -1,3 +1,7 @@
+## What this PR introduces?
+
+<!-- Please, includes adescription of this pull request -->
+
 ## PR Checklist
 
 Please check if your PR fulfills the following requirements:
@@ -5,25 +9,22 @@ Please check if your PR fulfills the following requirements:
 - [ ] I followed GitFlow pattern to create the branch
 - [ ] My code produces no warnings or errors in the console
 - [ ] Tests for the changes have been added / updated
-- [ ] Docs have been added / updated
+- [ ] The changes made are accessible
+- [ ] The changes made are responsive
 
 ## PR Type
 
 What kind of change does this PR introduce?
 
 ```
+[ ] Hotfix
 [ ] Bugfix
 [ ] Feature
+[ ] Documentation update
 [ ] Code style update (formatting, local variables)
 [ ] Refactoring (no functional changes, no api changes)
-[ ] Build related changes
-[ ] CI related changes
-[ ] Other... Please describe:
+[ ] CI/CD related changes
 ```
-
-## What is the current behavior?
-
-## What is the new behavior?
 
 ## Does this PR introduce a breaking change?
 
