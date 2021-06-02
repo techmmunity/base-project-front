@@ -10,5 +10,8 @@ node_modules/
 # javascript
 /*.js
 
-#Vscode
-.vscode
+# vscode
+src/core/
+
+# vscode
+.vscode/

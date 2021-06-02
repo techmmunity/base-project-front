@@ -1,4 +1,4 @@
 export enum LayoutsEnum {
-	"DEFAULT" = "DEFAULT",
-	"NONE" = "NONE",
+	DEFAULT = "DEFAULT",
+	NONE = "NONE",
 }

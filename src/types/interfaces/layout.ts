@@ -1,5 +1,5 @@
 import { LayoutsEnum } from "../enums/layout";
 
-export interface FCWithLayout extends React.FC {
+export interface FcWithLayout extends React.FC {
 	layout?: LayoutsEnum;
 }
