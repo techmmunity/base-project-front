@@ -1,10 +1,10 @@
 import styled, { createGlobalStyle } from "styled-components";
 
-import { Colors } from "assets/colors";
+import { COLORS } from "assets/colors";
 
 export const Main = styled.main``;
 
-export default createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 	 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ export default createGlobalStyle`
 
 		&:focus-visible {
 			outline: 3px solid transparent;
-		 	box-shadow: 0 0 0 3px ${Colors.white1000};
+		 	box-shadow: 0 0 0 3px ${COLORS.white1000};
 		}
   }
 
@@ -26,14 +26,14 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${Colors.background};
-    color: ${Colors.white1000};
+    background: ${COLORS.background};
+    color: ${COLORS.white1000};
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
   }
 
 	a {
-		color: ${Colors.white1000};
+		color: ${COLORS.white1000};
 		text-decoration: none;
 	}
 
@@ -52,12 +52,12 @@ export default createGlobalStyle`
 	}
 
 	::-webkit-scrollbar-track {
-		background: ${Colors.black1000}50;
+		background: ${COLORS.black1000}50;
 		border-radius: 4px;
 	}
 
 	::-webkit-scrollbar-thumb {
-		background: ${Colors.gray300};
+		background: ${COLORS.gray300};
 		border-radius: 4px;
 	}
 

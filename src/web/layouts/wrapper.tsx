@@ -12,12 +12,12 @@ const getLayout = (layout?: LayoutsEnum): React.FC => {
 	}
 };
 
-export const LayoutWrapper: React.FC = props => {
-	const Layout = getLayout((props.children as any).type.layout);
+export const LayoutWrapper: React.FC = ({ children, ...props }) => {
+	const Layout = getLayout((children as any).type.layout);
 
 	return (
 		<Layout {...props}>
-			<main>{props.children}</main>
+			<main>{children}</main>
 		</Layout>
 	);
 };

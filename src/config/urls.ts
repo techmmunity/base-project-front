@@ -1,3 +1,3 @@
-export const Urls = {
+export const URLS = {
 	self: "https://example.com",
 };

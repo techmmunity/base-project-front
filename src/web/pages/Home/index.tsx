@@ -1,8 +1,8 @@
 import { useTranslation } from "next-i18next";
 
-import { FCWithLayout } from "types/interfaces/layout";
+import { FcWithLayout } from "types/interfaces/layout";
 
-export const HomePage: FCWithLayout = () => {
+export const HomePage: FcWithLayout = () => {
 	const { t } = useTranslation();
 
 	return <>{t("message")}</>;
