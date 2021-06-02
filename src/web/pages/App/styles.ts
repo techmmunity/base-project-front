@@ -4,7 +4,7 @@ import { Colors } from "assets/colors";
 
 export const Main = styled.main``;
 
-export default createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 	 * {
     margin: 0;
     padding: 0;
