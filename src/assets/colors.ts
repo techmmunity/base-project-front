@@ -1,7 +1,7 @@
-import { Colors as CoreColors } from "core/assets/colors";
+import { COLORS as CORE_COLORS } from "core/assets/colors";
 
 export const COLORS = {
-	...CoreColors,
+	...CORE_COLORS,
 	primary: "#ffffff",
 	secondary: "#000000",
 };
