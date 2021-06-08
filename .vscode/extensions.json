@@ -5,6 +5,7 @@
 		"dbaeumer.vscode-eslint",
 		"editorconfig.editorconfig",
 		"eamodio.gitlens",
+		"esbenp.prettier-vscode",
 		"formulahendry.auto-rename-tag",
 		"gruntfuggly.todo-tree",
 		"irongeek.vscode-env",

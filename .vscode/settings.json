@@ -5,6 +5,9 @@
 	// Disable Tab To Space Conversion
 	"editor.insertSpaces": false,
 
+	// Make Prettier The Default Code Formatter
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
 	// Config Default End Of Line Formatting
 	"files.eol": "\n",
 
@@ -32,10 +35,26 @@
 	"typescript.suggest.autoImports": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"typescript.tsserver.log": "verbose",
+	"[typescript]": {
+		"editor.defaultFormatter": null
+	},
+
+	// TypeScript With React
+	"[typescriptreact]": {
+		"editor.defaultFormatter": null
+	},
 
 	// JavaScript
 	"javascript.suggest.autoImports": true,
 	"javascript.updateImportsOnFileMove.enabled": "always",
+	"[javascript]": {
+		"editor.defaultFormatter": null
+	},
+
+	// JavaScript With React
+	"[javascriptreact]": {
+		"editor.defaultFormatter": null
+	},
 
 	// =========== Plugins & Extensions General Config ===============
 
