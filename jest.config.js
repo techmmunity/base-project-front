@@ -1,4 +1,4 @@
-export default {
+module.exports = {
 	collectCoverageFrom: [
 		"src/web/components/HeadContent/*.(ts|tsx)",
 		"src/web/pages/**/*.(ts|tsx)",
@@ -17,12 +17,14 @@ export default {
 	},
 	testPathIgnorePatterns: ["<rootDir>/.next", "<rootDir>/node_modules"],
 	testRegex: ".*\\.spec\\.(ts|tsx)$",
-	// coverageThreshold: {
-	// 	global: {
-	// 		branches: 100,
-	// 		functions: 100,
-	// 		lines: 100,
-	// 		statements: 100,
-	// 	},
-	// },
+	/*
+	 * CoverageThreshold: {
+	 * 	global: {
+	 * 		branches: 100,
+	 * 		functions: 100,
+	 * 		lines: 100,
+	 * 		statements: 100,
+	 * 	},
+	 * },
+	 */
 };
