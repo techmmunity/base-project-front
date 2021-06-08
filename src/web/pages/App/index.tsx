@@ -9,7 +9,7 @@ import { GlobalStyle } from "./styles";
 export const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => (
 	<>
 		<Head />
-		<LayoutWrapper {...pageProps}>
+		<LayoutWrapper>
 			<Component {...pageProps} />
 		</LayoutWrapper>
 		<GlobalStyle />
