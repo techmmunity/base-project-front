@@ -95,6 +95,7 @@
 		"builtins",
 		"camelcase",
 		"cannonical",
+		"coverallsapp",
 		"dribbble",
 		"linkedin",
 		"nextjs",
@@ -102,6 +103,7 @@
 		"postbuild",
 		"sonarjs",
 		"techmmunity",
-		"testid"
+		"testid",
+		"webfactory"
 	]
 }
