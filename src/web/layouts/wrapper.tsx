@@ -11,7 +11,11 @@ interface Props {
 	children: ReactNode & { type: Layout };
 }
 
-const getLayout = (layout?: LayoutsEnum) => {
+interface PropsWithChildren {
+	children: ReactNode;
+}
+
+const getLayout = (layout?: LayoutsEnum): FC<PropsWithChildren> => {
 	switch (layout) {
 		case LayoutsEnum.NONE:
 			return NoneLayout;

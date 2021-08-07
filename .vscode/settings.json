@@ -73,9 +73,6 @@
 	],
 
 	// Material Icon Theme
-	"material-icon-theme.files.associations": {
-		"tsconfig.json": "tune"
-	},
 	"material-icon-theme.folders.associations": {
 		"types": "typescript",
 		"enums": "typescript",
