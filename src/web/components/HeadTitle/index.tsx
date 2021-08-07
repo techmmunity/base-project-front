@@ -1,11 +1,15 @@
 import Head from "next/head";
 
+import { SITE } from "configs/site";
+
 interface Props {
 	title: string;
 }
 
-export const HeadTitle: React.FC<Props> = ({ title }) => (
+export const HeadTitle = ({ title }: Props) => (
 	<Head>
-		<title>{title} | Techmmunity</title>
+		<title>
+			{title} | {SITE.name}
+		</title>
 	</Head>
 );

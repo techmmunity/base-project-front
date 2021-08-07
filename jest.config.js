@@ -10,12 +10,12 @@ module.exports = {
 		},
 	},
 	moduleDirectories: ["node_modules", "src"],
-	moduleFileExtensions: ["js", "json", "ts", "tsx"],
+	moduleFileExtensions: ["js", "jsx", "ts", "tsx", "json"],
 	setupFiles: ["<rootDir>/src/web/tests/setup.ts"],
 	transform: {
-		"^.+\\.(tsx|ts|jsx|js)$": "ts-jest",
+		"^.+\\.(|js|jsx|ts|tsx)$": "ts-jest",
 	},
-	testPathIgnorePatterns: ["<rootDir>/.next", "<rootDir>/node_modules"],
+	testPathIgnorePatterns: ["<rootDir>/node_modules", "<rootDir>/.next"],
 	testRegex: ".*\\.spec\\.(ts|tsx)$",
 	/*
 	 * CoverageThreshold: {

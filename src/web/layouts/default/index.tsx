@@ -1,5 +1,7 @@
-import { Container } from "./styles";
+import { ReactNode } from "react";
 
-export const DefaultLayout: React.FC = ({ children }) => (
-	<Container>{children}</Container>
-);
+interface Props {
+	children: ReactNode;
+}
+
+export const DefaultLayout = ({ children }: Props) => <>{children}</>;

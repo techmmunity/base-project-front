@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-import { COLORS } from "assets/colors";
-
 export const GlobalStyle = createGlobalStyle`
 	 * {
     margin: 0;
@@ -10,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 
 		&:focus-visible {
 			outline: 3px solid transparent;
-		 	box-shadow: 0 0 0 3px ${COLORS.white1000};
+		 	box-shadow: 0 0 0 3px var(--secondary);
 		}
   }
 
@@ -24,18 +22,24 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${COLORS.background};
-    color: ${COLORS.white1000};
+    background: var(--background);
+    color: var(--secondary);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
   }
 
+	h1, h2, h3, h4, h5, h6 {
+  	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	}
+
 	a {
-		color: ${COLORS.white1000};
+		color: var(--secondary);
 		text-decoration: none;
 	}
 
-	button, input {
+	button, input, textarea {
+		background: transparent;
+    color: var(--secondary);
 		font-size: 1.6rem;
 		border: transparent;
 	}
@@ -50,17 +54,35 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	::-webkit-scrollbar-track {
-		background: ${COLORS.black1000}50;
+		background: var(--scrollbar-background);
 		border-radius: 4px;
 	}
 
 	::-webkit-scrollbar-thumb {
-		background: ${COLORS.gray300};
+		background: var(--scrollbar);
 		border-radius: 4px;
 	}
 
 	::-webkit-scrollbar-corner {
 		background: transparent;
+	}
+
+	:root {
+		--main: #2A66F7;
+		--black: #000000;
+		--white: #FFFFFF;
+		--shadow: #00000050,
+		--page-max-width: 112.8rem;
+		--vertical-padding: 2rem;
+		--horizontal-padding: 2rem;
+	}
+
+	[data-theme='dark'] {
+		--primary: #000000;
+		--secondary: #FFFFFF;
+		--background: #202124;
+		--scrollbar: var(--main);
+		--scrollbar-background: #00000050;
 	}
 
 	@media (max-width: 768px) {

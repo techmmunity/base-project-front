@@ -30,5 +30,6 @@
 		"next-i18next.config.js",
 		"next.config.js",
 		"sitemap-generator.js"
-	]
+	],
+	"files": ["src/types/next-i18next.d.ts"]
 }

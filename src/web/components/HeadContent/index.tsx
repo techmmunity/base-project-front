@@ -1,14 +1,14 @@
-import { URLS } from "config/urls";
+import { SITE } from "configs/site";
 
 interface Props {
 	ogLocale?: string;
 }
 
-export const HeadContent: React.FC<Props> = ({ ogLocale = "en_US" }) => (
+export const HeadContent = ({ ogLocale = "en_US" }: Props) => (
 	<>
-		<meta name="og:site_name" content="Base Project Front" />
-		<meta name="og:url" content={URLS.self} />
+		<meta name="og:site_name" content={SITE.name} />
+		<meta name="og:url" content={SITE.url} />
 		<meta name="og:locale" content={ogLocale} />
-		<link rel="cannonical" href={URLS.self} />
+		<link rel="cannonical" href={SITE.url} />
 	</>
 );

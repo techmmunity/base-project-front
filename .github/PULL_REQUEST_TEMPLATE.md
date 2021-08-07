@@ -35,4 +35,4 @@ What kind of change does this PR introduce?
 
 <!-- If this PR contains a breaking change, please describe the impact and migration path for existing applications below. -->
 
-## Other information (Prints, details, etc)
+## Other information (prints, details, etc)
