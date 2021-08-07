@@ -4,12 +4,12 @@ import "@testing-library/jest-dom/extend-expect";
 
 import { HeadContent } from "web/components/HeadContent";
 
-import { URLS } from "config/urls";
+import { SITE } from "configs/site";
 
 import { getAttributeValue } from "../helpers/get-attribute-value";
 
 describe("Components > HeadContent", () => {
-	it("should find the meta og:name_title with Base Project Front value", () => {
+	it(`should find the meta og:name_name with ${SITE.name}`, () => {
 		render(<HeadContent />);
 
 		expect(
@@ -19,10 +19,10 @@ describe("Components > HeadContent", () => {
 				attributeValue: "og:site_name",
 				namedItem: "content",
 			}),
-		).toBe("Base Project Front");
+		).toBe(SITE.name);
 	});
 
-	it(`should find the meta og:url with ${URLS.self} value`, () => {
+	it(`should find the meta og:url with ${SITE.url} value`, () => {
 		render(<HeadContent />);
 
 		expect(
@@ -32,10 +32,10 @@ describe("Components > HeadContent", () => {
 				attributeValue: "og:url",
 				namedItem: "content",
 			}),
-		).toBe(URLS.self);
+		).toBe(SITE.url);
 	});
 
-	it("should find the meta og:locale with en value", () => {
+	it("should find the meta og:locale with en_US value", () => {
 		render(<HeadContent />);
 
 		expect(
@@ -45,10 +45,10 @@ describe("Components > HeadContent", () => {
 				attributeValue: "og:locale",
 				namedItem: "content",
 			}),
-		).toBe("en");
+		).toBe("en_US");
 	});
 
-	it(`should find the link cannonical with ${URLS.self} value`, () => {
+	it(`should find the link cannonical with ${SITE.url} value`, () => {
 		render(<HeadContent />);
 
 		expect(
@@ -58,6 +58,6 @@ describe("Components > HeadContent", () => {
 				attributeValue: "cannonical",
 				namedItem: "href",
 			}),
-		).toBe(URLS.self);
+		).toBe(SITE.url);
 	});
 });

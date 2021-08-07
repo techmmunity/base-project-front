@@ -1,9 +1,6 @@
-import { DetailedHTMLProps, AnchorHTMLAttributes } from "react";
+import { AnchorHTMLAttributes } from "react";
 
-type LinkAttributes = DetailedHTMLProps<
-	AnchorHTMLAttributes<HTMLAnchorElement>,
-	HTMLAnchorElement
->;
+type LinkAttributes = AnchorHTMLAttributes<HTMLAnchorElement>;
 
 type LinkOmitted = Omit<LinkAttributes, "style" | "target">;
 

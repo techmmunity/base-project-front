@@ -10,8 +10,8 @@ import { ServerStyleSheet } from "styled-components";
 
 import { HeadContent } from "web/components/HeadContent";
 
-import enUSSystem from "assets/translations/en-US/system.json";
-import ptBRSystem from "assets/translations/pt-BR/system.json";
+import enUSSystem from "assets/translations/en-US/common.json";
+import ptBRSystem from "assets/translations/pt-BR/common.json";
 
 import { GetSystemInformationResult } from "types/interfaces/system";
 
@@ -54,16 +54,16 @@ export default class MyDocument extends Document {
 
 	public render() {
 		const { locale } = this.props.__NEXT_DATA__;
-		const { html, head } = getSystemInformation(locale as string);
+		const { system } = getSystemInformation(locale as string);
 
 		return (
-			<Html lang={html.lang}>
+			<Html lang={system.html.lang}>
 				<Head>
 					<link
-						href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+						href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
 						rel="stylesheet"
 					/>
-					<HeadContent ogLocale={head.metas.ogLocale} />
+					<HeadContent ogLocale={system.html.head.ogLocale} />
 				</Head>
 				<body>
 					<Main />

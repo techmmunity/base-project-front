@@ -21,12 +21,13 @@
 
 	// Color of Comments
 	"editor.tokenColorCustomizations": {
-		"comments": "#00a0eb"
+		"comments": "#00A0EB"
 	},
 
 	// Make VSCode understand this files as files of this languages
 	"files.associations": {
-		".env.test": "env"
+		".env.*": "env",
+		".lintstagedrc": "json"
 	},
 
 	// ================ Languages General Config ====================
@@ -34,7 +35,6 @@
 	// TypeScript
 	"typescript.suggest.autoImports": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	"typescript.tsserver.log": "verbose",
 	"[typescript]": {
 		"editor.defaultFormatter": null
 	},
@@ -83,6 +83,42 @@
 	"todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "[ ]"],
 	"todo-tree.tree.showScanModeButton": false,
 	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+
+	// colorize
+	"colorize.enable_search_variables": true,
+	"colorize.colorized_variables": ["CSS", "SASS"],
+	"colorize.languages": [
+		"css",
+		"sass",
+		"scss",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"xml"
+	],
+	"colorize.exclude": [
+		"**/.git",
+		"**/.svn",
+		"**/.hg",
+		"**/CVS",
+		"**/.DS_Store",
+		"**/.git",
+		"**/node_modules",
+		"**/bower_components",
+		"**/tmp",
+		"**/dist",
+		"**/tests"
+	],
+	"colorize.include": [
+		"**/*.css",
+		"**/*.scss",
+		"**/*.sass",
+		"**/*.js",
+		"**/*.jsx",
+		"**/*.ts",
+		"**/*.tsx"
+	],
 
 	// Code Spell Checker
 	"cSpell.words": [

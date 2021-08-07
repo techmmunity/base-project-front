@@ -2,19 +2,18 @@ import LinkNext from "next/link";
 
 import { LinkProps } from "types/interfaces/link";
 
-export const Link: React.FC<LinkProps> = ({
+export const Link: FC<LinkProps> = ({
 	href,
 	blank,
 	disabled,
 	children,
-	rel = "",
 	...props
 }) => (
 	<LinkNext href={href}>
 		<a
 			style={{ pointerEvents: disabled ? "none" : "auto" }}
 			target={blank ? "_blank" : "_self"}
-			rel={`noopener noreferrer ${rel}`}
+			rel="noopener noreferrer"
 			{...props}
 		>
 			{children}

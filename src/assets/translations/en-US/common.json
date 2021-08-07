@@ -1,3 +1,10 @@
 {
-	"message": "Hello World"
+	"system": {
+		"html": {
+			"lang": "en-US",
+			"head": {
+				"ogLocale": "en-US"
+			}
+		}
+	}
 }
