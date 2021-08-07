@@ -5,6 +5,7 @@ import { LayoutsEnum } from "types/enums/layouts";
 import { Layout } from "types/interfaces/layout";
 
 import { DefaultLayout } from "./default";
+import { NoneLayout } from "./none";
 
 interface Props {
 	children: ReactNode & { type: Layout };
@@ -12,6 +13,8 @@ interface Props {
 
 const getLayout = (layout?: LayoutsEnum) => {
 	switch (layout) {
+		case LayoutsEnum.NONE:
+			return NoneLayout;
 		case LayoutsEnum.DEFAULT:
 		default:
 			return DefaultLayout;
@@ -19,8 +22,7 @@ const getLayout = (layout?: LayoutsEnum) => {
 };
 
 export const LayoutWrapper: FC<Props> = ({ children }) => {
-	// eslint-disable-next-line @typescript-eslint/no-shadow
-	const Layout = getLayout(children.type.layout);
+	const LayoutComponent = getLayout(children.type.layout);
 
-	return <Layout>{children}</Layout>;
+	return <LayoutComponent>{children}</LayoutComponent>;
 };

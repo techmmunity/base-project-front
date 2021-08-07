@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import { COLORS } from "core/assets/colors";
+import { COLORS } from "assets/colors";
 
 export const GlobalStyle = createGlobalStyle`
 	 * {
@@ -70,21 +70,21 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	:root {
-		--main: #2A66F7;
-		--black: ${COLORS.black1000};
-		--white: ${COLORS.white1000};
-		--shadow: ${COLORS.black1000}50,
+		--main: ${COLORS.main};
+		--black: ${COLORS.black};
+		--white: ${COLORS.white};
+		--shadow: ${COLORS.black}50,
 		--page-max-width: 112.8rem;
 		--vertical-padding: 2rem;
 		--horizontal-padding: 2rem;
 	}
 
 	[data-theme='dark'] {
-		--primary: ${COLORS.black1000};
-		--secondary: ${COLORS.white1000};
-		--background: ${COLORS.background};
+		--primary: ${COLORS.black};
+		--secondary: ${COLORS.white};
+		--background: #202124;
 		--scrollbar: var(--main);
-		--scrollbar-background: ${COLORS.black1000}50;
+		--scrollbar-background: ${COLORS.black}50;
 	}
 
 	@media (max-width: 768px) {

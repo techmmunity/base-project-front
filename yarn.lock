@@ -683,10 +683,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@techmmunity/eslint-config@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@techmmunity/eslint-config/-/eslint-config-3.1.0.tgz#4991795162ea9bdba9c777afcf9e3acd31d149b2"
-  integrity sha512-hzN5CcS8O6Qi/+aDEKU7/sIqXY3D1Yn7bJZk3k8KIw1ICd7kLlhoT8dLPqYmbC8EFFf4crcIVVxvrBw2O7Pgiw==
+"@techmmunity/eslint-config@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@techmmunity/eslint-config/-/eslint-config-3.2.0.tgz#2bf1c2099c9f2afe550a94e8684c81d5ab9e4d7d"
+  integrity sha512-cMlCiABA9IANhk9a86JJlRK3L2UuQwKJCKWWBg72Mk0D927FxQe8usYXrrjUbJPmoSFUoeJ4LclO4ew9yOOVDA==
   dependencies:
     "@typescript-eslint/parser" "^4.25.0"
     eslint-config-prettier "^8.3.0"
@@ -4445,7 +4445,7 @@ next-themes@^0.0.15:
   resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.0.15.tgz#ab0cee69cd763b77d41211f631e108beab39bf7d"
   integrity sha512-LTmtqYi03c4gMTJmWwVK9XkHL7h0/+XrtR970Ujvtu3s0kZNeJN24aJsi4rkZOI8i19+qq6f8j+8Duwy5jqcrQ==
 
-next@latest:
+next@^11.0.1:
   version "11.0.1"
   resolved "https://registry.yarnpkg.com/next/-/next-11.0.1.tgz#b8e3914d153aaf7143cb98c09bcd3c8230eeb17a"
   integrity sha512-yR7be7asNbvpVNpi6xxEg28wZ7Gqmj1nOt0sABH9qORmF3+pms2KZ7Cng33oK5nqPIzEEFJD0pp2PCe3/ueMIg==

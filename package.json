@@ -1,10 +1,10 @@
 {
 	"name": "base-project-front",
 	"version": "1.0.0",
-	"private": true,
+	"private": false,
 	"license": "Apache-2.0",
 	"dependencies": {
-		"next": "latest",
+		"next": "^11.0.1",
 		"next-i18next": "^8.2.0",
 		"next-sitemap": "^1.6.148",
 		"next-themes": "^0.0.15",
@@ -16,7 +16,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.14.0",
 		"@next/eslint-plugin-next": "^11.0.1",
-		"@techmmunity/eslint-config": "^3.1.0",
+		"@techmmunity/eslint-config": "^3.2.0",
 		"@testing-library/jest-dom": "^5.12.0",
 		"@testing-library/react": "^11.2.6",
 		"@types/jest": "^26.0.23",
@@ -58,6 +58,7 @@
 		"test:cov": "jest --coverage",
 		"husky:pre-commit": "tsc && lint-staged",
 		"temp:test-tsc": "tsc",
-		"clone:core": "./scripts/clone-core.sh"
+		"clone:core": "./scripts/clone-core.sh",
+		"format": "eslint src --fix --quiet"
 	}
 }
