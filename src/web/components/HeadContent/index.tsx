@@ -4,7 +4,7 @@ interface Props {
 	ogLocale?: string;
 }
 
-export const HeadContent = ({ ogLocale = "en_US" }: Props) => (
+export const HeadContent: FC<Props> = ({ ogLocale = "en_US" }) => (
 	<>
 		<meta name="og:site_name" content={SITE.name} />
 		<meta name="og:url" content={SITE.url} />

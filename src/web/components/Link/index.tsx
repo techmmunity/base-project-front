@@ -2,13 +2,13 @@ import LinkNext from "next/link";
 
 import { LinkProps } from "types/interfaces/link";
 
-export const Link = ({
+export const Link: FC<LinkProps> = ({
 	href,
 	blank,
 	disabled,
 	children,
 	...props
-}: LinkProps) => (
+}) => (
 	<LinkNext href={href}>
 		<a
 			style={{ pointerEvents: disabled ? "none" : "auto" }}

@@ -42,6 +42,7 @@
 		"eslint-plugin-sonarjs": "^0.7.1-117",
 		"husky": "^6.0.0",
 		"jest": "^26.6.3",
+		"lint-staged": "^11.1.2",
 		"prettier": "^2.3.0",
 		"ts-jest": "^26.5.5",
 		"ts-node": "^9.1.1",
@@ -55,7 +56,7 @@
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"test:cov": "jest --coverage",
-		"husky:pre-commit": "eslint . && tsc",
+		"husky:pre-commit": "tsc && lint-staged",
 		"temp:test-tsc": "tsc",
 		"clone:core": "./scripts/clone-core.sh"
 	}

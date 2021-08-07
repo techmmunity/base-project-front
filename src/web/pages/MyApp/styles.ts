@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+import { COLORS } from "core/assets/colors";
+
 export const GlobalStyle = createGlobalStyle`
 	 * {
     margin: 0;
@@ -69,20 +71,20 @@ export const GlobalStyle = createGlobalStyle`
 
 	:root {
 		--main: #2A66F7;
-		--black: #000000;
-		--white: #FFFFFF;
-		--shadow: #00000050,
+		--black: ${COLORS.black1000};
+		--white: ${COLORS.white1000};
+		--shadow: ${COLORS.black1000}50,
 		--page-max-width: 112.8rem;
 		--vertical-padding: 2rem;
 		--horizontal-padding: 2rem;
 	}
 
 	[data-theme='dark'] {
-		--primary: #000000;
-		--secondary: #FFFFFF;
-		--background: #202124;
+		--primary: ${COLORS.black1000};
+		--secondary: ${COLORS.white1000};
+		--background: ${COLORS.background};
 		--scrollbar: var(--main);
-		--scrollbar-background: #00000050;
+		--scrollbar-background: ${COLORS.black1000}50;
 	}
 
 	@media (max-width: 768px) {

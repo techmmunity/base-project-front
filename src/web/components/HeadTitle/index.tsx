@@ -6,7 +6,7 @@ interface Props {
 	title: string;
 }
 
-export const HeadTitle = ({ title }: Props) => (
+export const HeadTitle: FC<Props> = ({ title }) => (
 	<Head>
 		<title>
 			{title} | {SITE.name}

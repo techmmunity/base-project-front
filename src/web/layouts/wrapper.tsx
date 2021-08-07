@@ -18,7 +18,7 @@ const getLayout = (layout?: LayoutsEnum) => {
 	}
 };
 
-export const LayoutWrapper = ({ children }: Props) => {
+export const LayoutWrapper: FC<Props> = ({ children }) => {
 	// eslint-disable-next-line @typescript-eslint/no-shadow
 	const Layout = getLayout(children.type.layout);
 

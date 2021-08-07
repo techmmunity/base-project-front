@@ -26,7 +26,8 @@
 
 	// Make VSCode understand this files as files of this languages
 	"files.associations": {
-		".env.*": "env"
+		".env.*": "env",
+		".lintstagedrc": "json"
 	},
 
 	// ================ Languages General Config ====================
@@ -34,7 +35,6 @@
 	// TypeScript
 	"typescript.suggest.autoImports": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	"typescript.tsserver.log": "off",
 	"[typescript]": {
 		"editor.defaultFormatter": null
 	},
@@ -81,6 +81,11 @@
 		"enums": "typescript",
 		"interfaces": "typescript"
 	},
+
+	// TODO Tree
+	"todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "[ ]"],
+	"todo-tree.tree.showScanModeButton": false,
+	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 
 	// colorize
 	"colorize.enable_search_variables": true,

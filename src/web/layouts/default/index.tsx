@@ -4,4 +4,4 @@ interface Props {
 	children: ReactNode;
 }
 
-export const DefaultLayout = ({ children }: Props) => <>{children}</>;
+export const DefaultLayout: FC<Props> = ({ children }) => <>{children}</>;

@@ -4,4 +4,4 @@ export interface Layout {
 	layout?: LayoutsEnum;
 }
 
-export type FCWithLayout = Layout & (() => void);
+export type FCWithLayout = FC & Layout;
