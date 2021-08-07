@@ -13,7 +13,7 @@ module.exports = {
 	moduleFileExtensions: ["js", "jsx", "ts", "tsx", "json"],
 	setupFiles: ["<rootDir>/src/web/tests/setup.ts"],
 	transform: {
-		"^.+\\.(|js|jsx|ts|tsx)$": "ts-jest",
+		"^.+\\.(js|jsx|ts|tsx)$": "ts-jest",
 	},
 	testPathIgnorePatterns: ["<rootDir>/node_modules", "<rootDir>/.next"],
 	testRegex: ".*\\.spec\\.(ts|tsx)$",
