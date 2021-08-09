@@ -73,7 +73,7 @@ export const GlobalStyle = createGlobalStyle`
 		--main: ${COLORS.main};
 		--black: ${COLORS.black};
 		--white: ${COLORS.white};
-		--shadow: ${COLORS.black}50,
+		--shadow: ${COLORS.black}50;
 		--page-max-width: 112.8rem;
 		--vertical-padding: 2rem;
 		--horizontal-padding: 2rem;
@@ -82,7 +82,7 @@ export const GlobalStyle = createGlobalStyle`
 	[data-theme='dark'] {
 		--primary: ${COLORS.black};
 		--secondary: ${COLORS.white};
-		--background: #202124;
+		--background: ${COLORS.darkThemeBackground};
 		--scrollbar: var(--main);
 		--scrollbar-background: ${COLORS.black}50;
 	}
