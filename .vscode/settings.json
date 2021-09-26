@@ -5,9 +5,6 @@
 	// Disable Tab To Space Conversion
 	"editor.insertSpaces": false,
 
-	// Make Prettier The Default Code Formatter
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-
 	// Config Default End Of Line Formatting
 	"files.eol": "\n",
 
@@ -35,24 +32,26 @@
 	// TypeScript
 	"typescript.suggest.autoImports": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	"[typescript]": {
-		"editor.defaultFormatter": null
-	},
-
-	// TypeScript With React
-	"[typescriptreact]": {
-		"editor.defaultFormatter": null
-	},
 
 	// JavaScript
 	"javascript.suggest.autoImports": true,
 	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	// ======================= Formatters ===========================
+
+	// Make Prettier The Default Code Formatter
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
 	"[javascript]": {
 		"editor.defaultFormatter": null
 	},
-
-	// JavaScript With React
+	"[typescript]": {
+		"editor.defaultFormatter": null
+	},
 	"[javascriptreact]": {
+		"editor.defaultFormatter": null
+	},
+	"[typescriptreact]": {
 		"editor.defaultFormatter": null
 	},
 
@@ -63,7 +62,7 @@
 	"gitlens.codeLens.enabled": false,
 	"gitlens.codeLens.recentChange.enabled": false,
 
-	// Eslint
+	// ESlint
 	"eslint.packageManager": "yarn",
 	"eslint.validate": [
 		"javascript",
@@ -84,62 +83,15 @@
 	"todo-tree.tree.showScanModeButton": false,
 	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 
-	// colorize
-	"colorize.enable_search_variables": true,
-	"colorize.colorized_variables": ["CSS", "SASS"],
-	"colorize.languages": [
-		"css",
-		"sass",
-		"scss",
-		"javascript",
-		"javascriptreact",
-		"typescript",
-		"typescriptreact",
-		"xml"
-	],
-	"colorize.exclude": [
-		"**/.git",
-		"**/.svn",
-		"**/.hg",
-		"**/CVS",
-		"**/.DS_Store",
-		"**/.git",
-		"**/node_modules",
-		"**/bower_components",
-		"**/tmp",
-		"**/dist",
-		"**/tests"
-	],
-	"colorize.include": [
-		"**/*.css",
-		"**/*.scss",
-		"**/*.sass",
-		"**/*.js",
-		"**/*.jsx",
-		"**/*.ts",
-		"**/*.tsx"
-	],
-
 	// Code Spell Checker
 	"cSpell.words": [
-		"Colect",
-		"Enviroment",
-		"Helvetica",
-		"Parens",
-		"Roboto",
-		"behance",
-		"builtins",
-		"camelcase",
 		"cannonical",
+		"Colect",
 		"coverallsapp",
-		"dribbble",
-		"linkedin",
 		"nextjs",
-		"paren",
 		"postbuild",
-		"sonarjs",
+		"Roboto",
 		"techmmunity",
-		"testid",
 		"webfactory"
 	]
 }

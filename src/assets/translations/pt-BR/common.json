@@ -1,10 +1,6 @@
 {
 	"system": {
-		"html": {
-			"lang": "pt-BR",
-			"head": {
-				"ogLocale": "pt_BR"
-			}
-		}
+		"lang": "pt-BR",
+		"ogLocale": "pt_BR"
 	}
 }

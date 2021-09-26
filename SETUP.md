@@ -1,6 +1,6 @@
 # Setup Project Details
 
-## Enviroment config
+## Environment config
 
 - [Install yarn](https://classic.yarnpkg.com/en/docs/install)
 - [Install VSCode](https://code.visualstudio.com/Download)
