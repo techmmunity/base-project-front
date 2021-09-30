@@ -13,10 +13,6 @@
 # production
 /build
 
-# public
-robots.txt
-sitemap.xml
-
 # misc
 .DS_Store
 *.pem
@@ -41,6 +37,10 @@ yarn-error.log*
 !.vscode/launch.json
 !.vscode/settings.json
 !.vscode/tasks.json
+
+# public
+robots.txt
+sitemap.xml
 
 # core
 src/core

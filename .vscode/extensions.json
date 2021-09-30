@@ -1,18 +1,18 @@
 {
 	"recommendations": [
-		"coenraads.bracket-pair-colorizer-2",
-		"dbaeumer.vscode-eslint",
-		"editorconfig.editorconfig",
-		"eamodio.gitlens",
-		"esbenp.prettier-vscode",
 		"formulahendry.auto-rename-tag",
-		"irongeek.vscode-env",
-		"jpoissonnier.vscode-styled-components",
-		"pkief.material-icon-theme",
-		"naumovs.color-highlight",
-		"streetsidesoftware.code-spell-checker",
+		"coenraads.bracket-pair-colorizer-2",
 		"streetsidesoftware.code-spell-checker-portuguese-brazilian",
-		"kamikillerto.vscode-colorize",
-		"visualstudioexptteam.vscodeintellicode"
+		"streetsidesoftware.code-spell-checker",
+		"naumovs.color-highlight",
+		"editorconfig.editorconfig",
+		"irongeek.vscode-env",
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"pkief.material-icon-theme",
+		"esbenp.prettier-vscode",
+		"gruntfuggly.todo-tree",
+		"visualstudioexptteam.vscodeintellicode",
+		"jpoissonnier.vscode-styled-components"
 	]
 }

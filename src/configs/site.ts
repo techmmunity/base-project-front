@@ -1,4 +1,4 @@
 export const SITE = {
-	name: "Example",
-	url: "https://example.com/",
+	name: "Base Project Front",
+	url: "https://example.com",
 };

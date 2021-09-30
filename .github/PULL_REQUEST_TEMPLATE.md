@@ -7,8 +7,8 @@
 Please check if your PR fulfills the following requirements:
 
 - [ ] I followed GitFlow pattern to create the branch
-- [ ] My code produces no warnings or errors in the console
 - [ ] Tests for the changes have been added / updated
+- [ ] My code produces no warnings or errors
 - [ ] The changes made are accessible
 - [ ] The changes made are responsive
 
@@ -24,6 +24,7 @@ What kind of change does this PR introduce?
 [ ] Code style update (formatting, local variables)
 [ ] Refactoring (no functional changes, no api changes)
 [ ] CI/CD related changes
+[ ] Other: ...
 ```
 
 ## Does this PR introduce a breaking change?

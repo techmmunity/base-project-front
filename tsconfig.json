@@ -28,8 +28,8 @@
 		"**/*.tsx",
 		"jest.config.js",
 		"next-i18next.config.js",
-		"next.config.js",
-		"sitemap-generator.js"
+		"sitemap-generator.js",
+		"next.config.js"
 	],
-	"files": ["src/types/next-i18next.d.ts", "src/types/react.d.ts"]
+	"files": ["src/types/react.d.ts"]
 }

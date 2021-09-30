@@ -1,16 +1,20 @@
 import { createGlobalStyle } from "styled-components";
 
-import { COLORS } from "assets/colors";
+import { CONFIGS } from "styles/configs";
+
+import { COLORS } from "styles/colors";
+import { FONTS } from "styles/fonts";
+import { SIZES } from "styles/sizes";
 
 export const GlobalStyle = createGlobalStyle`
-	 * {
+	* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 		&:focus-visible {
-			outline: 3px solid transparent;
-		 	box-shadow: 0 0 0 3px var(--secondary);
+			outline: var(--alternative-outline);
+		 	box-shadow: var(--outline);
 		}
   }
 
@@ -27,12 +31,8 @@ export const GlobalStyle = createGlobalStyle`
     background: var(--background);
     color: var(--secondary);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 1.6rem;
+		${FONTS.text1}
   }
-
-	h1, h2, h3, h4, h5, h6 {
-  	font-family: "Poppins", Arial, Helvetica, sans-serif;
-	}
 
 	a {
 		color: var(--secondary);
@@ -42,7 +42,7 @@ export const GlobalStyle = createGlobalStyle`
 	button, input, textarea {
 		background: transparent;
     color: var(--secondary);
-		font-size: 1.6rem;
+		${FONTS.text1}
 		border: transparent;
 	}
 
@@ -70,21 +70,13 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	:root {
-		--main: ${COLORS.main};
-		--black: ${COLORS.black};
-		--white: ${COLORS.white};
-		--shadow: ${COLORS.black}50;
-		--page-max-width: 112.8rem;
-		--vertical-padding: 2rem;
-		--horizontal-padding: 2rem;
+		${COLORS.root}
+		${CONFIGS}
+		${SIZES}
 	}
 
 	[data-theme='dark'] {
-		--primary: ${COLORS.black};
-		--secondary: ${COLORS.white};
-		--background: ${COLORS.darkThemeBackground};
-		--scrollbar: var(--main);
-		--scrollbar-background: ${COLORS.black}50;
+		${COLORS.dark}
 	}
 
 	@media (max-width: 768px) {
