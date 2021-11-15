@@ -1,16 +1,15 @@
 ## What this PR introduces?
 
-<!-- Please, includes a description of this pull request -->
+<!-- Please, includes description of this pull request -->
 
 ## PR Checklist
 
 Please check if your PR fulfills the following requirements:
 
-- [ ] I followed GitFlow pattern to create the branch
+- [ ] I followed [GitFlow](https://github.com/techmmunity/git-magic/blob/master/docs/en/gitflow.md) pattern to create the branch
 - [ ] Tests for the changes have been added / updated
 - [ ] My code produces no warnings or errors
-- [ ] The changes made are accessible
-- [ ] The changes made are responsive
+- [ ] The changes made are accessible and responsive
 
 ## PR Type
 
