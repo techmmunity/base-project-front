@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 
 		&:focus-visible {
-			outline: var(--alternative-outline);
+			outline: var(--outline-alternative);
 		 	box-shadow: var(--outline);
 		}
   }
@@ -28,19 +28,19 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: var(--background);
-    color: var(--secondary);
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: var(--text);
+    font-family: "Roboto", sans-serif;
 		${FONTS.text1}
   }
 
 	a {
-		color: var(--secondary);
+		color: var(--text);
 		text-decoration: none;
 	}
 
 	button, input, textarea {
 		background: transparent;
-    color: var(--secondary);
+    color: var(--text);
 		${FONTS.text1}
 		border: transparent;
 	}
@@ -54,14 +54,14 @@ export const GlobalStyle = createGlobalStyle`
 		height: 1rem;
 	}
 
-	::-webkit-scrollbar-track {
-		background: var(--scrollbar-background);
-		border-radius: 4px;
-	}
-
 	::-webkit-scrollbar-thumb {
 		background: var(--scrollbar);
-		border-radius: 4px;
+		border-radius: 5px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: var(--scrollbar-background);
+		border-radius: 5px;
 	}
 
 	::-webkit-scrollbar-corner {
@@ -73,7 +73,7 @@ export const GlobalStyle = createGlobalStyle`
 		${CONFIGS}
 	}
 
-	[data-theme='dark'] {
+	[data-theme="dark"] {
 		${COLORS.dark}
 	}
 
