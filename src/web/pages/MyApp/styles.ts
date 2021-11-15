@@ -4,7 +4,6 @@ import { CONFIGS } from "styles/configs";
 
 import { COLORS } from "styles/colors";
 import { FONTS } from "styles/fonts";
-import { SIZES } from "styles/sizes";
 
 export const GlobalStyle = createGlobalStyle`
 	* {
@@ -72,7 +71,6 @@ export const GlobalStyle = createGlobalStyle`
 	:root {
 		${COLORS.root}
 		${CONFIGS}
-		${SIZES}
 	}
 
 	[data-theme='dark'] {
