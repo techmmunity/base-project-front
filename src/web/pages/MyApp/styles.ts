@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 
 		&:focus-visible {
-			outline: var(--outline-alternative);
+			outline: var(--alternative-outline);
 		 	box-shadow: var(--outline);
 		}
   }
