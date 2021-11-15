@@ -79,19 +79,31 @@ export const GlobalStyle = createGlobalStyle`
 
 	@media (max-width: 768px) {
     html {
+      font-size: 60%;
+    }
+  }
+
+	@media (max-width: 425px) {
+    html {
       font-size: 57.5%;
+    }
+  }
+
+	@media (max-width: 375px) {
+    html {
+      font-size: 55%;
     }
   }
 
 	@media (max-width: 320px) {
     html {
-      font-size: 55.5%;
+      font-size: 52.5%;
     }
   }
 
 	@media (max-width: 280px) {
     html {
-      font-size: 52.5%;
+      font-size: 50%;
     }
   }
 `;
