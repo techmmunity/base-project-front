@@ -1,12 +1,10 @@
 import { css } from "styled-components";
 
-import { COLORS as CORE_COLORS } from "core/assets/colors";
-
 export const COLORS = {
 	root: css`
-		--primary: ${CORE_COLORS.programming};
-		--black: ${CORE_COLORS.black};
-		--white: ${CORE_COLORS.white};
+		--primary: #01d2ce;
+		--black: #000000;
+		--white: #ffffff;
 		--shadow: #00000050;
 		--scrollbar: var(--primary);
 	`,

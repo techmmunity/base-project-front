@@ -44,7 +44,6 @@
 		"test:cov": "jest --coverage",
 		"husky:pre-commit": "tsc && lint-staged",
 		"temp:test-tsc": "tsc",
-		"format": "eslint src --fix --quiet",
-		"clone:core": "./scripts/clone-core.sh"
+		"format": "eslint src --fix --quiet"
 	}
 }
